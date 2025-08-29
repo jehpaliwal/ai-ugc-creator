@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base layout */
+html, body, #root { height: 100%; }
+
+@layer base {
+	body { @apply bg-gray-100 text-gray-900 antialiased m-0; }
+	a { @apply text-indigo-600 hover:text-indigo-500; }
+	img { @apply block max-w-full; }
+	textarea, input, button, select { font: inherit; }
+}
